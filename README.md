@@ -6,3 +6,7 @@ Para ese patrón de diseño, se encontró un escenario en una tienda de malteada
 
 ### Solución: 
 Generar un programa donde el usuario tenga la capacidad de elegir entre cómo realizar su malteada según sus preferencias entre si realizarla con leche entera, leche de almendras o simplemente a base de agua. Con lo antes mencionado, se estarían tomando en cuenta diferentes alternativas para cada cliente que entre a la tienda. Además, de incrementar la eficiencia por parte de los trabajadores al tener mayor control y organización en sus pedidos. 
+
+## ESTRUCTURAL (Decorate)
+### Problemática
+  
