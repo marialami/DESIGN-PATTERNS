@@ -9,4 +9,11 @@ Generar un programa donde el usuario tenga la capacidad de elegir entre cómo re
 
 ## ESTRUCTURAL (Decorate)
 ### Problemática
-  
+
+
+## CREACIONAL (Abstract Factory)
+### Problemática:
+Para este patrón, se encuentran varias familias de objetos, cada uno con una variedad de categorías. Si fuesemos a crear estos objetos por aparte, tendríamos que buscar una forma de que las variantes de cada familia se relaciones con las variantes de las demás familias, además cuando fuésemos a actualizar nuestras clases se violaría el principio de open/close ya que si cambian las familias cambiaría la clase donde se estén utilizando los objetos.
+
+### Solución:
+Abstract Factory nos permite, siendo un patrón creacional, crear abstracciones de las familias de objetos, así como sus variantes que serían las "factories". De esta forma, cambiar atributos de cada familia o agregar variantes no afecta a otras clases aparte de los objetos creados. El código "cliente" utiliza tanto las familias de objetos como las factories de cada variante, y así podemos escoger que familia o factory le pasamos al cliente sin afectar como tal su código.
