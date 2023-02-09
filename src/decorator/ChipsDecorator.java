@@ -8,7 +8,8 @@ public class ChipsDecorator extends Dessert{
 
     public ChipsDecorator(Dessert dessertDecorate) {
 
-        this.dessertDecorate = dessertDecorate;
+         this.dessertDecorate = dessertDecorate;
+        System.out.printf("Se añadieron las chispas \n");
     }
 
 

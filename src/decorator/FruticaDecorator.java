@@ -8,7 +8,6 @@ public class FruticaDecorator extends Dessert{
 
     public FruticaDecorator(Dessert dessertDecorate) {
         this.dessertDecorate = dessertDecorate;
-
-
+        System.out.printf("se añadio la frutica \n");
     }
 }
