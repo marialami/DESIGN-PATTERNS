@@ -17,7 +17,8 @@ Con Decorate podemos decorar los mismos objetos entre sí, ya que lo que hacemos
 
 ## CREACIONAL (Abstract Factory)
 ### Problemática:
-Para este patrón, se encuentran varias familias de objetos, cada uno con una variedad de categorías. Si fuesemos a crear estos objetos por aparte, tendríamos que buscar una forma de que las variantes de cada familia se relaciones con las variantes de las demás familias, además cuando fuésemos a actualizar nuestras clases se violaría el principio de open/close ya que si cambian las familias cambiaría la clase donde se estén utilizando los objetos.
+Para este patrón, se encuentran varias familias de objetos, cada uno con una variedad de categorías. En este caso tomamos el ejemplo de una repostería, en la que tienen distintos tipos de postres y cada uno con variedad de temáticas. Si fuesemos a crear estos objetos por aparte, tendríamos que buscar una forma de que las variantes de cada postre se relacionen con las variantes de las demás postres, además cuando fuésemos a actualizar nuestra "tienda" se violaría el principio de open/close al editar esta clase cuando un objeto cambie.
 
 ### Solución:
-Abstract Factory nos permite, siendo un patrón creacional, crear abstracciones de las familias de objetos, así como sus variantes que serían las "factories". De esta forma, cambiar atributos de cada familia o agregar variantes no afecta a otras clases aparte de los objetos creados. El código "cliente" utiliza tanto las familias de objetos como las factories de cada variante, y así podemos escoger que familia o factory le pasamos al cliente sin afectar como tal su código.
+Abstract Factory nos permite, siendo un patrón creacional, crear abstracciones de las familias de objetos, así como sus variantes que serían las "factories". De esta forma, creamos clases abstractas para cada tipo de postre y factories para las variaciones de cada postre. Así, cuando nuestro código cliente vaya a generar un pedido, este podrá completarse sin afectar como tal su código.
+
