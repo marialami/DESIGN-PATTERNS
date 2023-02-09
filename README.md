@@ -9,6 +9,10 @@ Generar un programa donde el usuario tenga la capacidad de elegir entre cómo re
 
 ## ESTRUCTURAL (Decorate)
 ### Problemática
+Si una pastelería decide usar una plataforma para que las personas hagan los pedidos en los puntos de venta, al inicio venden un tipo de pastel fijo, sin embargo decidieron implementar una función para que los usuarios pudieran personalizar sus pasteles, pero esto lleva a la problemática que actualmente solo tengo una clase pastel, o pastel crema, pero que pasa si la persona quiere pastel, crema y fruta, o pastal y fruta y si en algún momento decido añadir más topins me tocaría generar muchas clases combinando todo el tipo de opciones.
+
+###Solución
+Con Decorate podemos decorar los mismos objetos entre sí, ya que lo que hacemos es definir una interfaz de pastel y una para cada opción las cuales como constructor reciben a objeto tipo pastel, por lo que es como si metiera un objeto dentro de otro, para añadir su cualidad, lo que nos permite construir un objeto por capas en cualquier tipo de orden.
 
 
 ## CREACIONAL (Abstract Factory)
